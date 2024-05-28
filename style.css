@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika', sans-serif;
+}
+
+.left {
+    width: 25vw;
+    background-color: black;
+}
+
+.right {
+    width: 75vw;
+    margin: 7px 7px 0px 0px;
+    background: linear-gradient(180deg, #1d1d1d, #0a0a0a);
+    position: relative;
+}
+
+.logo {
+    padding: 10px;
+    margin: 0px 8px;
+}
+
+
+.home ul li {
+    display: flex;
+    width: 25px;
+    list-style: none;
+    gap: 10px;
+    margin: 6px 6px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.home ul :nth-child(1) {
+    color: white;
+}
+
+.home ul :nth-child(2) {
+    color: #a7a7a7;
+    transition: 0.5s ease-out;
+}
+
+.heading img {
+    width: 25px;
+    transition: 0.5s ease-out;
+}
+
+.library {
+    min-height: 73vh;
+    position: relative;
+}
+
+.heading :nth-child(2) {
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.5s ease-out;
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    padding: 18px 28px;
+    color: #a7a7a7;
+}
+
+.footer {
+    font-size: 12px;
+    gap: 8px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    align-items: center;
+    height: 60px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+.hamburgercont img {
+    display: none;
+}
+
+
+
+.nav :nth-child(2) {
+    background-color: black;
+    border-radius: 18px;
+    padding: 3px;
+}
+
+.nav :nth-child(3) {
+    background-color: black;
+    border-radius: 18px;
+    padding: 3px;
+}
+
+.nav {
+    margin: 10px;
+    padding: 8px;
+}
+
+.button {
+    margin: 0px 17px;
+}
+
+.button :nth-child(1) {
+    border: none;
+    background-color: transparent;
+    color: #a7a7a7;
+    padding: 0px 11px;
+    font-size: 16px;
+}
+
+.button :nth-child(2) {
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.spotifyplalist {
+    color: white;
+    padding: 10px 30px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    overflow: hidden;
+}
+
+
+.spotifyplalist:hover {
+    overflow-y: scroll;
+}
+
+.card {
+    width: 190px;
+    background: linear-gradient(180deg, #1d1d1d, #0a0a0a);
+    padding: 16px;
+    margin-top: 15px;
+    position: relative;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card h2 {
+    padding: 10px 0px 5px;
+    font-size: 17px;
+    color: white;
+}
+
+.card p {
+    color: #a7a7a7;
+    font-size: 15px;
+}
+
+.cardcontainer {
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+
+.play {
+    position: absolute;
+    right: 20px;
+    bottom: 85px;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover .play {
+    bottom: 95px;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.play svg {
+    transition: fill 0.3s ease-out;
+}
+
+.card:hover .play svg {
+    fill: #fff;
+}
+
+.card:hover {
+    background: linear-gradient(#1d1d1d, #1d1d1d);
+}
+
+.home ul :nth-child(2):hover {
+    color: white;
+    filter: brightness(150%);
+    transition: 0.5s ease-out;
+}
+
+.home ul li:hover {
+    text-decoration: underline;
+    transition: all 1s ease-in;
+}
+
+.heading:hover img,
+.heading:hover span {
+    color: #ffffff;
+    filter: brightness(150%);
+    transition: 0.5s ease-out;
+}
+
+.button :nth-child(1):hover {
+    color: white;
+    font-weight: bolder;
+}
+
+.button :nth-child(2):hover {
+    font-weight: bolder;
+    padding: 14px 25px;
+    border-radius: 23px;
+}
+
+.playbar {
+    position: fixed;
+    bottom: 0;
+    background-color: #1d1d1d;
+    width: 74.5vw;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.seekbar {
+    height: 4px;
+    width: 100%;
+    position: relative;
+    top: 83px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.circle {
+    position: absolute;
+    top: -7px;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.songbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.songbutton img {
+    cursor: pointer;
+}
+
+.songlist {
+    padding: 0px 21px;
+    max-height: 55vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.songinfo {
+    width: 40vh;
+}
+
+.songlist:hover {
+    overflow-y: scroll;
+}
+
+.songlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.playnow {
+    width: 200px;
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.songlist ul li {
+    display: flex;
+    background: linear-gradient(235deg, #1d1d1d, #0a0a0a);
+    gap: 10px;
+    padding: 8px 0px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px 0;
+    border-bottom: 1px solid #494949;
+}
+
+.info {
+    font-size: 13px;
+    width: 344px;
+}
+
+.disc {
+    transition: all 1s ease;
+}
+
+.songlist li:hover .disc {
+    transform: rotate(180deg);
+    transition: all 1s ease;
+}
+
+.songlist li img.disc {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.musicdetail {
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0px 10px;
+}
+
+@media (max-width: 1250px) {
+    .left {
+        position: absolute;
+        z-index: 1;
+        left: -100%;
+        transition: all .3s;
+    }
+
+    .right {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .playbar {
+        width: 98vw;
+        padding: 0px 9px;
+    }
+
+}
